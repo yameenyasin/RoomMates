@@ -32,13 +32,24 @@ public class loginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
                 ButterKnife.inject(this);
 
-_signupLink=(TextView)findViewById(R.id.link_signup);
+        _signupLink=(TextView)findViewById(R.id.link_signup);
+
         _signupLink.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 // Start the Signup activity
                 Intent intent = new Intent(getApplicationContext(), singupActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        _loginButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // Start the Signup activity
+                Intent intent = new Intent(getApplicationContext(), HomePageActivity.class);
                 startActivity(intent);
             }
         });
