@@ -1,7 +1,6 @@
 package roommates.yameen.com.roommates;
 
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -25,12 +24,14 @@ public class loginActivity extends AppCompatActivity {
     @InjectView(R.id.btn_login) Button _loginButton;
     @InjectView(R.id.link_signup) TextView _signupLink;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_login);
                 ButterKnife.inject(this);
+
+
 
         _signupLink=(TextView)findViewById(R.id.link_signup);
 
