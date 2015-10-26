@@ -6,4 +6,12 @@
     <string name="title_activity_login">loginActivity</string>
     <string name="title_activity_singup">singupActivity</string>
     <string name="title_activity_home_page">HomePageActivity</string>
+
+
+    <string name="flat_prompt">Choose a flat</string>
+
+    <string-array name="flat_arrays">
+            <item>Flat1</item>
+            <item>Flat2</item>
+    </string-array>
 </resources>
